@@ -13,7 +13,6 @@ class Command:
         except Exception as e:
            result_queue.put(e) 
 
-#command pattern reference
 class AddCommand(Command):
     def execute(self, a: Decimal, b: Decimal) -> Decimal:
         return a + b
